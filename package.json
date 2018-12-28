@@ -1,0 +1,29 @@
+{
+	"name": "dedup-suggestions",
+	"description": "Dedups Intellisense Suggestions",
+	"version": "0.9",
+	"publisher": "iknowmagic",
+	"license": "MIT",
+	"repository": "https://github.com/iKnowMagic/dedup-suggestions",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"activationEvents": [
+		"onCommand:extension.dedupSuggestions"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.dedupSuggestions",
+				"title": "Dedup Suggestions"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.22"
+	}
+}
